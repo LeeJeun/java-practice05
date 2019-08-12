@@ -4,7 +4,7 @@ public class MyStackException extends Exception {
 	private static final long serialVersionUID = 1L;
 
 	public MyStackException() {
-		super( "MyStackException Occurs" );
+		super( "Stack is empty" );
 	}
 	
 	public MyStackException( String message ) {

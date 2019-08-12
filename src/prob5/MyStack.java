@@ -31,7 +31,10 @@ public class MyStack {
 	}
 
 	//값을 뺀다
-	public String pop() {
+	public String pop() throws MyStackException{
+		if(isEmpty()) {
+			throw new MyStackException();
+		}
 		String data = buffer[top];
 		buffer[top--] = null;
 		return data; 
